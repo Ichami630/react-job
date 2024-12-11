@@ -7,7 +7,9 @@ import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    // parent route (MainLayout)
     <Route path='/' element={<MainLayout/>}>
+      {/* child route e.g HomePage,JobsPage */}
       <Route index element={ <HomePage /> }/>
       <Route path='/jobs' element={ <JobsPage /> }/>
       <Route path='*' element={ <NotFound /> }/>
@@ -17,16 +19,6 @@ const router = createBrowserRouter(
 
 const App = () => {
   return <RouterProvider router={router} />
-  // return (
-  //   <>
-  //     <Navbar />
-  //     <Hero/>
-  //     <HomeCards />
-  //     <JobListings />
-  //     <ViewAllJobs />
-      
-  //   </>
-  // );
 };
 
 export default App;

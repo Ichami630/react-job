@@ -10,5 +10,7 @@ const MainLayout = () => {
     </>
   )
 }
+// react outlet is used to render child route within 
+// the parent route
 
 export default MainLayout
