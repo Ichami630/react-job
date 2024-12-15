@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'; //for redirecting
 const AddJobPage = ({addJobSubmit}) => {
     const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ const AddJobPage = ({addJobSubmit}) => {
         //submit form to the backend api
         addJobSubmit(newJob);
 
-        alert('Job added successfully');
+        toast.success('job added successfully');
         return navigate('/jobs');
       
     }

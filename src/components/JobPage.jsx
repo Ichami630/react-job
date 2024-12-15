@@ -2,6 +2,7 @@ import React from 'react'
 // import { useState, useEffect } from 'react'
 import { useParams, useLoaderData,useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { FaArrowLeft,FaMapMarker } from 'react-icons/fa';
 
 
@@ -18,6 +19,7 @@ const JobPage = ({deleteJOb}) => {
     const onDeleteClick = async (jobId) => {
       if(confirm("Are you sure you want to delete this job ?")){
         deleteJOb(jobId);
+        toast.success('JOb deleted successfully');
         navigate('/jobs');
       }
     }
