@@ -113,7 +113,7 @@ const JobPage = ({deleteJOb}) => {
             <div className="p-6 mt-6 bg-white rounded-lg shadow-md">
               <h3 className="mb-6 text-xl font-bold">Manage Job</h3>
               <Link
-                to={`/jobs/edit/${job.id}`}
+                to={`/edit-job/${job.id}`}
                 className="block w-full px-4 py-2 mt-4 font-bold text-center text-white bg-indigo-500 rounded-full hover:bg-indigo-600 focus:outline-none focus:shadow-outline"
                 >Edit Job</Link>
               <button
