@@ -83,20 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "d52e",
-      "title": "front end developer",
-      "type": "Full-Time",
-      "location": "Manchester",
-      "description": "fully remote",
-      "salary": "Under $50K",
-      "company": {
-        "name": "fastweb",
-        "description": "you work from home",
-        "contactEmail": "brandonichami@gmail.com",
-        "contactPhone": "653595434"
-      }
     }
   ]
 }
